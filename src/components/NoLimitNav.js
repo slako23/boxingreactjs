@@ -4,6 +4,11 @@ import Moment from 'react-moment';
 
 class NoLimitNav extends Component {
     render() {
+
+        const listFighter = this.props.fighter.map( item => (
+            <div>{item.fighterName}</div>
+          ));
+
         
       return (
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,9 +27,11 @@ class NoLimitNav extends Component {
                             Fighters
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">fighterName</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" target="_blank" href="https://boxrec.com/en/proboxer/629465">{listFighter[0]}</a>
+                                <a class="dropdown-item" target="_blank" href="https://boxrec.com/en/proboxer/673141">{listFighter[1]}</a>
+                                <a class="dropdown-item" target="_blank" href="https://boxrec.com/en/proboxer/659461">{listFighter[2]}</a>
+                                <a class="dropdown-item" target="_blank" href="https://boxrec.com/en/proboxer/790719">{listFighter[3]}</a>
+                                <a class="dropdown-item" target="_blank" href="https://boxrec.com/en/proboxer/659771">{listFighter[4]}</a>
                             </div>
                         </li>        
                     </ul>

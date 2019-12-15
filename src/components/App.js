@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/App.css';
 
 import NoLimitNav from './NoLimitNav';
+import Promotion from './Promotion';
 import { findIndex, without } from 'lodash';
 
 class App extends Component {
@@ -10,34 +11,42 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      nlmbBoxers: [],
-      
+
+      myName:"Amadi",
+      nlmbBoxers: []
     };
     
   }
 
-  getBoxers() {
-    fetch('./fighter.json')
+// item.fighterId = this.state.lastIndex;
+// this.setState({ lastIndex: this.state.lastIndex + 1 });
+
+
+componentDidMount() {
+    fetch('./data.json')
       .then(response => response.json())
       .then(result => {
-        const fighters = result.map(boxer => {
-          boxer.fighterId = this.state.lastIndex;
-          this.setState({ lastIndex: this.state.lastIndex + 1 });
-          return boxer;
+        const boxer = result.map(item => {
+          return item;
         });
         this.setState({
-          nlmbBoxers: fighters
+          nlmbBoxers: boxer
         });
       });
   }
 
   render() {
 
+    
+
     return (
       <div>
+        
         <NoLimitNav
-        fighters={this.getBoxers}
+        fighter = {this.state.nlmbBoxers}
         />
+        <Promotion />
+         
       </div>
     );
   }
