@@ -1,0 +1,34 @@
+[
+    {
+        "fighterName": "Errol Spence",
+        "fighterCountry": "United States",
+        "weightClass": "Welterweight",
+        "fighterRecord": "26-0"
+    },
+    {
+        "fighterName": "Yves Ulysse Jr",
+        "fighterCountry": "Canada",
+        "weightClass": "Super Lightweight",
+        "fighterRecord": "18-2"
+    },
+    {
+        "fighterName": "Anthony Joshua",
+        "fighterCountry": "United Kingdom",
+        "weightClass": "Heavyweight",
+        "fighterRecord": "23-1"
+    },
+    {
+        "fighterName": "Shakur Stevenson",
+        "fighterCountry": "United States",
+        "weightClass": "Featherweight",
+        "fighterRecord": "13-0"
+    },
+    {
+        "fighterName": "Vasiliy Lomachenko",
+        "fighterCountry": "Ukraine",
+        "weightClass": "Lightweight",
+        "fighterRecord": "14-1"
+    },
+    
+]
+    
