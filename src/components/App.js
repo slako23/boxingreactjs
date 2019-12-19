@@ -3,7 +3,7 @@ import '../css/App.css';
 
 import NoLimitNav from './NoLimitNav';
 import Promotion from './Promotion';
-import { findIndex, without } from 'lodash';
+
 
 class App extends Component {
   
@@ -13,9 +13,11 @@ class App extends Component {
     this.state = {
 
       myName:"Amadi",
-      nlmbBoxers: []
+      nlmbBoxers: [],
+      ticketSubmission:[]
+
     };
-    
+    this.ticketLottery = this.ticketLottery.bind(this);
   }
 
 // item.fighterId = this.state.lastIndex;
@@ -35,6 +37,17 @@ componentDidMount() {
       });
   }
 
+
+
+  ticketLottery(ticket) {
+    let formSubmit = this.state.ticketSubmission;
+    
+    formSubmit.unshift(ticket);
+    this.setState({
+      ticketSubmission: formSubmit
+    });
+  }
+
   render() {
 
     
@@ -45,7 +58,9 @@ componentDidMount() {
         <NoLimitNav
         fighter = {this.state.nlmbBoxers}
         />
-        <Promotion />
+        <Promotion 
+          winTickets = {this.ticketLottery}
+        />
          
       </div>
     );

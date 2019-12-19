@@ -15,6 +15,22 @@ class Promotion extends Component {
       }
 
 
+        ticketFormSubmisson(e) {
+            e.preventDefault();
+            let tickForm = {
+            name: this.state.name,
+            email: this.state.email,
+            phonenumber: this.state.phonenumber
+         };
+         this.props.winTickets(tickForm);
+
+            this.setState({
+                name:'',
+                email:'',
+                phonenumber:''
+            });
+        }
+
         formNameChange = (event) => {
             this.setState({
                 name:event.target.value
@@ -36,14 +52,14 @@ class Promotion extends Component {
 
         }
             
-        
-        formSubmission(){
-            document.getElementById('formsubmit').addEventListener('mouseup', function(){
-                
-                document.getElementsByClassName('wintickets').innerHTML = "<h2>" + "GOODLUCK" + "</h2>"
-            
-            });
+       
+         joshuaVsRuizTickets() {
+            let i = document.getElementByClassName("wintickets");
+
+            document.i.innerHTML = "<h2>" + "Thank You" + "</h2>"
         }
+        
+      
 
     render() {
 
@@ -53,7 +69,7 @@ class Promotion extends Component {
                 
                 
 
-                <div class="jumbotron jumbotron-fluid">
+                <div class="jumbotron jumbotron-fluid"  id="jumbotron">
                     <div class="container">
                          <h1 class="display-4 websitetitle">NO LIMIT BOXING</h1>
                             <p class="lead">
@@ -71,7 +87,7 @@ class Promotion extends Component {
                     <div class="wintickets">
                         <div class="row">
                             <div class="col-md-6">
-                            <form onSubmit={this.formSubmission}>
+                            <form>
                                 <div class="form-group">
                                 <label for="exampleFormControlInput1">Name</label>
                                 <input value={this.state.name} onChange={this.formNameChange} class="form-control" id="exampleFormControlInput1"></input>
@@ -84,7 +100,7 @@ class Promotion extends Component {
                                 <label for="exampleFormControlInput1">Phone Number</label>
                                 <input value={this.state.phonenumber} onChange={this.formPhoneNumberChange} type="phone" class="form-control" id="exampleFormControlInput1"></input>
                                 </div>
-                                <button id="formsubmit" class="btn btn-primary">Submit</button>
+                                <button onClick={this.joshuaVsRuizTickets} type="submit" id="formsubmit" class="btn btn-primary">Submit</button>
                             </form>
                             </div>
                             <div class="col-md-6">

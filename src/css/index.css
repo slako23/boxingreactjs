@@ -1,3 +1,32 @@
+body{
+    background-color: #000000;
+    color:#fff;
+}
+
+
+#entireNav{
+    background-color: blue;
+    color:#fff;
+    height: 90px;
+}
+
+
+#jumbotron{
+    background-color: blue;
+    color: #fff;
+    margin: 50px 60px 0px 60px;
+}
+
+.wintickets{
+    margin:80px;
+    border: 2px solid #ccc;
+    padding: 50px;
+}
+
+.wintickets form{
+    background-color: #fff;
+    color:#000000;
+}
 
 .fighthighlights{
     display:grid;
@@ -5,13 +34,18 @@
     grid-row-gap:2em;
     margin: 50px;
 
-
 }
 
 .fighthighlights > div{
-    background-color:#FDB31E;;
+    background-color:blue;
     height: 100%;
     text-align: center;
     color: #000000;
 
 }
+
+
+.fighthighlights iframe{
+    padding:20px;
+}
+
