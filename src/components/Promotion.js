@@ -51,25 +51,39 @@ class Promotion extends Component {
             })
 
         }
-            
-       
-         joshuaVsRuizTickets() {
-            let i = document.getElementByClassName("wintickets");
+      
 
-            document.i.innerHTML = "<h2>" + "Thank You" + "</h2>"
-        }
-        
+
       
 
     render() {
-
         
+        const boxerName = this.props.fighterTable.map( boxer => (
+
+            <div>{boxer.fighterName}</div>
+          ));
+
+          const boxerCountry = this.props.fighterTable.map( boxer => (
+
+            <div>{boxer.fighterCountry}</div>
+          ));
+
+          const boxerWeightClass = this.props.fighterTable.map( boxer => (
+
+            <div>{boxer.weightClass}</div>
+          ));
+
+          const boxerRecord = this.props.fighterTable.map( boxer => (
+
+            <div>{boxer.fighterRecord}</div>
+          ));
+
       return (
-            <div>
+            <div role="main">
                 
                 
 
-                <div class="jumbotron jumbotron-fluid"  id="jumbotron">
+                <div class="jumbotron jumbotron-fluid"  id="jumbotron" role="contentinfo">
                     <div class="container">
                          <h1 class="display-4 websitetitle">NO LIMIT BOXING</h1>
                             <p class="lead">
@@ -87,7 +101,7 @@ class Promotion extends Component {
                     <div class="wintickets">
                         <div class="row">
                             <div class="col-md-6">
-                            <form>
+                            <form role="form">
                                 <div class="form-group">
                                 <label for="exampleFormControlInput1">Name</label>
                                 <input value={this.state.name} onChange={this.formNameChange} class="form-control" id="exampleFormControlInput1"></input>
@@ -100,7 +114,7 @@ class Promotion extends Component {
                                 <label for="exampleFormControlInput1">Phone Number</label>
                                 <input value={this.state.phonenumber} onChange={this.formPhoneNumberChange} type="phone" class="form-control" id="exampleFormControlInput1"></input>
                                 </div>
-                                <button onClick={this.joshuaVsRuizTickets} type="submit" id="formsubmit" class="btn btn-primary">Submit</button>
+                                <button type="submit" id="formsubmit" class="btn btn-primary">Submit</button>
                             </form>
                             </div>
                             <div class="col-md-6">
@@ -110,6 +124,57 @@ class Promotion extends Component {
                         </div>
                     </div>
                 </div>
+
+
+
+                
+
+
+                        <table class="table" id="fightertable">
+                            <thead>
+                                <p>
+                                Edmonton-based No Limit Boxing Club was established in 2005 by amateur boxer Stan Lako, the first african to own a gym with multiple World Champions. No Limit is one of boxing’s most active and respected gyms, presenting shows in packed venues around the world.
+                                </p>
+                                <tr>
+                                    <th scope="col">FIGHTER</th>
+                                    <th scope="col">COUNTRY</th>
+                                    <th scope="col">WEIGHTCLASS</th>
+                                    <th scope="col">RECORD</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>{boxerName[0]}</td>
+                                    <td>{boxerCountry[0]}</td>
+                                    <td>{boxerWeightClass[0]}</td>
+                                    <td>{boxerRecord[0]}</td>
+                                </tr>
+                                <tr>
+                                    <td>{boxerName[1]}</td>
+                                    <td>{boxerCountry[1]}</td>
+                                    <td>{boxerWeightClass[1]}</td>
+                                    <td>{boxerRecord[1]}</td>
+                                </tr>
+                                <tr>
+                                    <td>{boxerName[2]}</td>
+                                    <td>{boxerCountry[2]}</td>
+                                    <td>{boxerWeightClass[2]}</td>
+                                    <td>{boxerRecord[2]}</td>
+                                </tr>
+                                <tr>
+                                    <td>{boxerName[3]}</td>
+                                    <td>{boxerCountry[3]}</td>
+                                    <td>{boxerWeightClass[3]}</td>
+                                    <td>{boxerRecord[3]}</td>
+                                </tr>
+                                <tr>
+                                    <td>{boxerName[4]}</td>
+                                    <td>{boxerCountry[4]}</td>
+                                    <td>{boxerWeightClass[4]}</td>
+                                    <td>{boxerRecord[4]}</td>
+                                </tr>
+                            </tbody>
+                        </table>
 
 
 
@@ -132,13 +197,13 @@ class Promotion extends Component {
 
                 
 
-                <div class="container">
+                <div class="container" id="gymhours">
                     <div class="row">
                         <div class="col-md-8">
-                            <img src="images/homegym.jpg"></img>
+                            <img src="images/homegym.jpg" alt="boxing-gym"></img>
                         </div>
                         <div class="col-md-4">
-                        <table>
+                        <table id="gymhourstable">
                             <thead>
                                 <tr>
                                     <th colspan="2">Gym Hours</th>
@@ -146,23 +211,23 @@ class Promotion extends Component {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>Monday</td>
+                                    <td>Monday:</td>
                                     <td>12:00pm-9:00pm</td>
                                 </tr>
                                 <tr>
-                                    <td>Tuesday</td>
+                                    <td>Tuesday:</td>
                                     <td>12:00pm-9:00pm</td>
                                 </tr>
                                 <tr>
-                                    <td>Wednesday</td>
+                                    <td>Wednesday:</td>
                                     <td>12:00pm-9:00pm</td>
                                 </tr>
                                 <tr>
-                                    <td>Thursday</td>
+                                    <td>Thursday:</td>
                                     <td>12:00pm-9:00pm</td>
                                 </tr>
                                 <tr>
-                                    <td>Friday</td>
+                                    <td>Friday:</td>
                                     <td>CLOSED</td>
                                 </tr>
                             </tbody>

@@ -6,26 +6,67 @@ body{
 
 #entireNav{
     background-color: blue;
-    color:#fff;
     height: 90px;
+}
+
+#entireNav button span{
+    color:#fff;
+}
+#entireNav button span:hover{
+    color: #000000;
+}
+
+#mainnavlink{
+    color:#fff;
+}
+#mainnavlink:hover{
+    color: #000000;;
+}
+
+#navbarDropdown{
+    color:#fff;
+}
+#navbarDropdown:hover{
+    color: #000000;;
+}
+
+
+.dropdown-item{
+    color: #000000;
+
+}
+
+.dropdown-item:hover{
+    color:blue;
 }
 
 
 #jumbotron{
     background-color: blue;
     color: #fff;
-    margin: 50px 60px 0px 60px;
+    margin: 50px 90px 0px 90px;
 }
 
 .wintickets{
     margin:80px;
-    border: 2px solid #ccc;
+    border: 2px solid blue;
     padding: 50px;
 }
 
 .wintickets form{
     background-color: #fff;
     color:#000000;
+}
+
+#fightertable{
+    background-color:#fff;
+   
+}
+
+#fightertable thead p{
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
 }
 
 .fighthighlights{
@@ -40,7 +81,6 @@ body{
     background-color:blue;
     height: 100%;
     text-align: center;
-    color: #000000;
 
 }
 
@@ -49,3 +89,33 @@ body{
     padding:20px;
 }
 
+#gymhours{
+    border: 2px solid blue;
+    padding: 50px;
+
+}
+
+#gymhourstable tbody tr td{
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+.footer{
+    background: blue;
+    color:#fff;
+    margin-top:40px;
+}
+
+.footer ul li{
+    list-style: none;
+} 
+
+.footer ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover{
+    color:#000000;
+}

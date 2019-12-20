@@ -3,7 +3,7 @@ import '../css/App.css';
 
 import NoLimitNav from './NoLimitNav';
 import Promotion from './Promotion';
-
+import Footer from './Footer';
 
 class App extends Component {
   
@@ -60,7 +60,9 @@ componentDidMount() {
         />
         <Promotion 
           winTickets = {this.ticketLottery}
+          fighterTable = {this.state.nlmbBoxers}
         />
+        <Footer/>
          
       </div>
     );
