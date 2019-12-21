@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../css/App.css';
 
 import NoLimitNav from './NoLimitNav';
-import Promotion from './Promotion';
+import Content from './Content';
 import Footer from './Footer';
 
 class App extends Component {
@@ -58,7 +58,7 @@ componentDidMount() {
         <NoLimitNav
         fighter = {this.state.nlmbBoxers}
         />
-        <Promotion 
+        <Content 
           winTickets = {this.ticketLottery}
           fighterTable = {this.state.nlmbBoxers}
         />

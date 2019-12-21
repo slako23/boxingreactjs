@@ -47,7 +47,19 @@ body{
     margin: 50px 90px 0px 90px;
 }
 
+
+#carouselExampleControls{
+    margin:100px;
+    border: 2px solid blue;
+}
+
+
+.upcomingfight{
+    text-align: center;
+}
+
 .wintickets{
+    background-color: blue;
     margin:80px;
     border: 2px solid blue;
     padding: 50px;
@@ -58,35 +70,29 @@ body{
     color:#000000;
 }
 
+.wintickets h2{
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #fightertable{
     background-color:#fff;
-   
+   padding:50px;
 }
 
-#fightertable thead p{
+
+.nolimitwarriors{
     text-align: center;
-    margin-right:auto;
-    margin-left:auto;
 }
 
-.fighthighlights{
-    display:grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-row-gap:2em;
-    margin: 50px;
-
+#fighthighlights{
+    background-color: blue;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.fighthighlights > div{
-    background-color:blue;
-    height: 100%;
+#fighthighlights h4{
     text-align: center;
-
-}
-
-
-.fighthighlights iframe{
-    padding:20px;
 }
 
 #gymhours{

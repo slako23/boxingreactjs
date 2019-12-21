@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FaTimes } from 'react-icons/fa';
 import Moment from 'react-moment';
 
-class Promotion extends Component {
+class Content extends Component {
 
 
     constructor() {
@@ -53,7 +53,7 @@ class Promotion extends Component {
         }
       
 
-
+        
       
 
     render() {
@@ -78,7 +78,7 @@ class Promotion extends Component {
             <div>{boxer.fighterRecord}</div>
           ));
 
-      return (
+          return (
             <div role="main">
                 
                 
@@ -92,14 +92,38 @@ class Promotion extends Component {
                     </div>
                 </div>
 
+               
 
+               
+                <h2 class="upcomingfight">UPCOMING FIGHTS</h2>
 
-
-
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                            <img class="d-block w-100" src="images/spencevsporter.jpg" alt="SpencevsPorter"></img>
+                        </div>
+                        <div class="carousel-item">
+                         <img class="d-block w-100" src="images/joshuavsruizlarge.jpg" alt="JoshuavsRuiz"></img>
+                        </div>
+                        <div class="carousel-item">
+                         <img class="d-block w-100" src="images/lomachenkovs.png" alt="Lomachenkovs"></img>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                        
 
                 <div class="container">
                     <div class="wintickets">
                         <div class="row">
+                        <h2>ENTER FOR TICKETS TO SEE JOSHUA VS RUIZ 2</h2>
                             <div class="col-md-6">
                             <form role="form">
                                 <div class="form-group">
@@ -118,23 +142,16 @@ class Promotion extends Component {
                             </form>
                             </div>
                             <div class="col-md-6">
-                            <h2>ENTER FOR TICKETS TO SEE JOSHUA VS RUIZ 2</h2>
                             <img src="images/joshuavsruiz.jpg"></img>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-
-                
-
-
-                        <table class="table" id="fightertable">
+                <h3 class="nolimitwarriors">NO LIMIT WARRIORS</h3>
+                     <div class="container" id="fightertable">
+                        <table class="table">
                             <thead>
-                                <p>
-                                Edmonton-based No Limit Boxing Club was established in 2005 by amateur boxer Stan Lako, the first african to own a gym with multiple World Champions. No Limit is one of boxing’s most active and respected gyms, presenting shows in packed venues around the world.
-                                </p>
                                 <tr>
                                     <th scope="col">FIGHTER</th>
                                     <th scope="col">COUNTRY</th>
@@ -175,27 +192,26 @@ class Promotion extends Component {
                                 </tr>
                             </tbody>
                         </table>
-
-
-
-                <section class="fighthighlights">
-                    <div>
-                        <h4>Lomachenko vs Russel Jr</h4>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Z55XXdpn4xE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
 
-                    <div>
-                        <h4>Stevenson vs Gonzalez</h4>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/ucaCm2kd3C4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                <div class="container" id="fighthighlights">
+                    <div class="row">
+                        <div class="col">
+                            <h4>Spence vs Porter</h4>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/cKizQI8F7Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col">
+                            <h4>Stevenson vs Gonzalez</h4>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ucaCm2kd3C4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col">
+                            <h4>Lomachenko vs Russel Jr</h4>
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Z55XXdpn4xE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
-
-                    <div>
-                        <h4>Spence vs Porter</h4>
-                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/cKizQI8F7Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                     </div>
-                </section>
-
-                
+                </div>
 
                 <div class="container" id="gymhours">
                     <div class="row">
@@ -248,4 +264,4 @@ class Promotion extends Component {
     }
   } 
   
-  export default Promotion;
+  export default Content;
