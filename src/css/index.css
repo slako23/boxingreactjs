@@ -56,6 +56,48 @@ body{
 
 .upcomingfight{
     text-align: center;
+    margin: 30px auto -70px auto;
+    background-color:blue;
+    width:15%;
+}
+
+
+#map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+
+#map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+#gymhours{
+    border: 2px solid blue;
+    padding: 50px;
+
+}
+
+#gymhours .row{
+    margin-top:40px;
+    bargin-bottom:40px;
+}
+
+#gymhours h6{
+    border-bottom: 2px solid blue;
+    text-align: center;
+}
+
+#gymhourstable tbody tr td{
+    padding-top: 20px;
+    text-align: center;
+
 }
 
 .wintickets{
@@ -95,17 +137,7 @@ body{
     text-align: center;
 }
 
-#gymhours{
-    border: 2px solid blue;
-    padding: 50px;
 
-}
-
-#gymhourstable tbody tr td{
-    padding-top: 20px;
-    text-align: center;
-
-}
 
 .footer{
     background: blue;
