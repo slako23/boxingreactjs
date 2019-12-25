@@ -94,29 +94,30 @@ class Content extends Component {
 
                
 
-               
-                <h2 class="upcomingfight">UPCOMING FIGHTS</h2>
+               <div class="upcomingfight">
+                    <h2>UPCOMING FIGHTS</h2>
 
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                            <img class="d-block w-100" src="images/spencevsporter.jpg" alt="SpencevsPorter"></img>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                                <img class="d-block w-100" src="images/spencevsporter.jpg" alt="SpencevsPorter"></img>
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="images/joshuavsruizlarge.jpg" alt="JoshuavsRuiz"></img>
+                            </div>
+                            <div class="carousel-item">
+                            <img class="d-block w-100" src="images/lomachenkovs.png" alt="Lomachenkovs"></img>
+                            </div>
                         </div>
-                        <div class="carousel-item">
-                         <img class="d-block w-100" src="images/joshuavsruizlarge.jpg" alt="JoshuavsRuiz"></img>
-                        </div>
-                        <div class="carousel-item">
-                         <img class="d-block w-100" src="images/lomachenkovs.png" alt="Lomachenkovs"></img>
-                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
                         
 
@@ -270,18 +271,19 @@ class Content extends Component {
 
 
                 <div class="container" id="fighthighlights">
+                <h3>FIGHT HIGHLIGHTS</h3>
                     <div class="row">
                         <div class="col">
                             <h4>Spence vs Porter</h4>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/cKizQI8F7Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/cKizQI8F7Cw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="col">
                             <h4>Stevenson vs Gonzalez</h4>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/ucaCm2kd3C4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/ucaCm2kd3C4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div class="col">
                             <h4>Lomachenko vs Russel Jr</h4>
-                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Z55XXdpn4xE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="100%" height="300" src="https://www.youtube.com/embed/Z55XXdpn4xE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
