@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import '../css/App.css';
+// import '../css/App.css';
 
 import NoLimitNav from './NoLimitNav';
-import Content from './Content';
+import Jumbotronandslider from './Jumbotronandslider';
+import Gyminfo from './Gyminfo';
+import Raffleform from './Raffleform';
+import Boxertable from './Boxertable';
+import Fighthighlights from './Fighthighlights';
 import Footer from './Footer';
 
 class App extends Component {
@@ -12,7 +16,6 @@ class App extends Component {
     super();
     this.state = {
 
-      myName:"Amadi",
       nlmbBoxers: [],
       ticketSubmission:[]
 
@@ -20,12 +23,10 @@ class App extends Component {
     this.ticketLottery = this.ticketLottery.bind(this);
   }
 
-// item.fighterId = this.state.lastIndex;
-// this.setState({ lastIndex: this.state.lastIndex + 1 });
 
-
+// Load list of fighters
 componentDidMount() {
-    fetch('./data.json')
+    fetch('./fighter.json')
       .then(response => response.json())
       .then(result => {
         const boxer = result.map(item => {
@@ -38,7 +39,7 @@ componentDidMount() {
   }
 
 
-
+// Form for ticket raffle
   ticketLottery(ticket) {
     let formSubmit = this.state.ticketSubmission;
     
@@ -58,10 +59,15 @@ componentDidMount() {
         <NoLimitNav
         fighter = {this.state.nlmbBoxers}
         />
-        <Content 
+        <Jumbotronandslider/>
+        <Gyminfo/>
+        <Raffleform
           winTickets = {this.ticketLottery}
+        />
+        <Boxertable 
           fighterTable = {this.state.nlmbBoxers}
         />
+        <Fighthighlights/>
         <Footer/>
          
       </div>
